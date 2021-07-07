@@ -55,14 +55,26 @@ body {
 }
 
 .sidebar-item.active {
-  background-color: hsl(209, 100%, 30%);
+  background-color: hsl(209, 100%, 43%);
+}
+
+.sidebar-item::after {
+  content: " ";
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  bottom: 0;
+  height: 1px;
+  background-color: hsl(209, 100%, 13%);
 }
 
 .slider-container {
   grid-area: slider;
   background-color: tomato;
+  height: 20%;
   margin-top: 2rem;
   padding: 2rem;
+  position: bottom;
 }
 
 .slider {
